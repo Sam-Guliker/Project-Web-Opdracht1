@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>KLM</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+</head>
+<body>
+
+  <header>
+    <img src="images/klm_logo.png" alt="klm logo">
+    <h1>Reisverhalen</h1>
+
+    <nav>
+      <ul>
+        <li><a href="https://oege.ie.hva.nl/~gulikes001/projectweb/index.html">Overzicht</a></li>
+        <li><a href="https://oege.ie.hva.nl/~gulikes001/projectweb/aanmeldpagina.html">Aanmelden</a></li>
+      </ul>
+    </nav>
+
+    <section>
+        <form id="searchthis" action="/search" method="get">
+          <!-- Search box for blogger by Namanyay Goel //-->
+          <input id="namanyay-search-box" name="q" size="40" type="text" placeholder="  Uw zoektermen. "/>
+          <input id="namanyay-search-btn" value="Search" type="submit"/>
+        </form>
+
+        <form>
+          <ul>
+            <li>
+              <label>Drama
+                <input type="checkbox" name="genre" value="Drama"/>
+              </label>
+            </li>
+            <li>
+              <label>Avontuur
+                <input type="checkbox" name="genre" value="Avontuur" />
+              </label>
+            </li>
+            <li>
+              <labe>Actie
+                <input type="checkbox" name="genre" value="Actie" />
+              </label>
+            </li>
+            <li>
+              <label>Liefde
+                <input type="checkbox" name="genre" value="Liefde" />
+              </label>
+            </li>
+            <li>
+              <label>Horror
+                <input type="checkbox" name="genre" value="Horror" />
+              </label>
+            </li>
+            <li>
+              <label>Vrienschap
+                <input type="checkbox" name="genre" value="Vriendschap" />
+              </label>
+            </li>
+
+            <li>
+              <label >Western
+                <input type="checkbox" name="genre" value="Western" />
+              </label>
+            </li>
+            <li>
+              <label>Humor
+                <input type="checkbox" name="genre" value="Humor" />
+              </label>
+            </li>
+            <li>
+              <label>Biografie
+                <input type="checkbox" name="genre" value="Biografie" />
+              </label>
+            </li>
+            <li>
+              <label>Griezelverhaal
+                <input type="checkbox" name="genre" value="Griezelverhaal" />
+              </label>
+            </li>
+            <li>
+              <label>Romantisch Verhaal
+                <input type="checkbox" name="genre" value="Romantisch Verhaal" />
+              </label>
+            </li>
+          </ul>
+        </form>
+
+    </section>
+  </header>
+
+  <main id="formulier">
+
+      <form>
+        <h1>Aanmelden</h1>
+          <fieldset>
+            <legend>Persoonlijke Informatie </legend>
+              <label> Voornaam </label>
+              <input id="1"class="aanmelden" onclick="getFocus(this.id)" name="voornaam" type="text" placeholder="Joe" required>
+
+              <label> Tussenvoegsel </label>
+              <input name="tv" type="text" placeholder="v.d" required>
+
+              <label>Achternaam</label>
+              <input name="achternaam" type="text" placeholder="Doe"required>
+
+              <label>Email</label>
+              <input name="email" type="email"  placeholder="example@gmail.com" required>
+
+              <label> Straatnaam</label>
+              <input name="straatnaam" type="text" placeholder="Kappertjeslaan" required>
+          </fieldset>
+          <fieldset>
+
+              <label>Postcode</label>
+              <input name="postcode" type="text" placeholder="1234-AA" required>
+
+              <label>Huisnummer</label>
+              <input name="huisnummer" type="number" placeholder="123 1" required>
+
+              <label>Telefoonnummer</label>
+              <input name="telefoonnummer" type="number" placeholder="0201234567" required>
+
+              <label>Wachtwoord</label>
+              <input name="password" type="text" placeholder="------" required>
+
+              <label> Leeftijd </label>
+              <input type="number"
+               min="1"
+               max="100"
+               step="1"
+               value="1">
+
+
+              <button type=submit>Verzenden &rsaquo; </button>
+          </fieldset>
+      </form>
+  </main>
+
+
+
+</body>
+<script src="scripts/script.js"></script>
+</html>

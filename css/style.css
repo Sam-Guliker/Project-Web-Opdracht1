@@ -1,0 +1,617 @@
+/*////////////////////////////////////////////////////////////
+
+                            Mobile
+
+////////////////////////////////////////////////////////////*/
+
+body {
+  background-color:rgba(0, 161, 288, 0.1);
+}
+
+header {
+  background-color: rgb(255, 255, 255);
+  width:100%;
+  margin:auto;
+}
+
+header > img {
+  padding-top:0.8em;
+  width:5em;
+  display:block;
+  margin:auto;
+}
+
+article {
+  background-color:rgba(255, 255, 255, 1);
+  width:21em;
+  margin:auto;
+  margin-bottom:1em;
+}
+
+article > img {
+  margin-top:-2em;
+  width:21em;
+  padding:0;
+  margin:0;
+  display:block;
+}
+
+/*////////////////////////////////////////////////////////////
+
+                          Formulier
+
+////////////////////////////////////////////////////////////*/
+
+#formulier {
+  background-color: rgb(255, 255, 255);
+}
+
+#formulier form fieldset label {
+  display: block;
+  line-height: 32px;
+  width: 33%;
+  cursor: default;
+  padding: 1em 0em;
+}
+
+#formulier form h1 {
+  font-family: 'Raleway';
+  font-size: 1.375em;
+  font-weight:lighter;
+  color: rgba(0, 161, 228, 0.9);
+  padding:1em 0em;
+}
+
+#formulier form legend {
+  font-family: 'Raleway';
+  font-size: 1em;
+  padding:1em 0em;
+  font-weight:lighter;
+  font-weight: bold;
+  color: #005b82;
+}
+
+form {
+  background-color: rgba(255, 255, 255);
+  margin:0 auto;
+}
+
+li> input {
+  flex-basis: 33;
+}
+
+main {
+  margin:auto;
+  display: flex;
+  flex-flow: column;
+}
+
+fieldset {
+  border:0 none;
+}
+
+main form fieldset input {
+  display:block;
+  margin: 0;
+  height: 2em;
+  line-height: 15px;
+  padding: 6px;
+  width: 20em;
+  color: #003145;
+  border: 1px solid #abd7ea;
+  border-radius: 3px;
+  background-color: #fcfefe;
+}
+
+#formulier form fieldset {
+  border-top: 1px solid rgb(0, 161, 228);
+}
+
+#formulier form fieldset:last-child {
+  border-top:none;
+}
+
+article > div {
+  background-color: rgba(0, 161, 228, 0.9);
+  position: relative;
+  width: 16.5em;
+  margin-bottom: -6.4em;
+  margin-top: -3.4em;
+  float: right;
+  top: 3.4em;
+}
+button {
+  margin-top:1em;
+  background-color:rgb(231, 123, 47);
+  padding:0.5em;;
+  border-width: 0;
+  color:rgb(255, 255, 255);
+  float:right;
+  margin-bottom:2em;
+}
+
+#formulier form fieldset input:invalid {
+  border:1px solid red;
+}
+
+#formulier form fieldset input:valid {
+  border:1px solid green;
+}
+
+/* clear fix */
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+/*////////////////////////////////////////////////////////////
+
+                            Typography
+
+////////////////////////////////////////////////////////////*/
+
+h1,h2,h3,h4,h5 {
+ margin:0;
+}
+
+body>h1 {
+  text-align: center;
+  font-family: 'Raleway';
+  font-size: 1.6em;
+  padding:1em;
+  font-weight:lighter;
+  color:rgb(46,46,46);
+}
+
+article  h1 {
+  position:relative;
+  font-family: 'Raleway';
+  font-size: 1.375em;
+  padding:1em;
+  font-weight:lighter;
+  color:rgb(250,250,250);
+}
+
+header h1 {
+  font-family: 'Raleway';
+  font-size: 1.6em;
+  color:rgb(0,161,228);
+  font-weight: 400;
+  padding:1em;
+
+}
+
+p {
+  padding: 0em 1em;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+time {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+article a {
+  position: relative;
+  float:right;
+  text-decoration: none;
+  color:rgb(231,123,47);
+  padding:1em;
+  top:-5em;
+  padding:1em;
+  background-color:rgb(255,255,255);
+  margin-bottom:-4em;
+
+}
+
+article > footer {
+  padding: 1em 1em 0em 1em;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+article > footer > a {
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+  float:none;
+}
+
+label {
+  padding: 0em 1em;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+nav ul li a {
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  padding:0.5em 0em;
+  color: rgba(0, 161, 228, 0.9);
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+}
+
+nav ul li {
+  display:block;
+  width:100%;
+  padding:1em 0em;
+  margin:0;
+}
+
+nav ul {
+  margin:0;
+  text-align: center;
+  padding:0.5em 0em;
+}
+/*////////////////////////////////////////////////////////////
+
+                          Header Slide
+
+////////////////////////////////////////////////////////////*/
+
+section {
+  background-color: rgb(255,255,255);
+  border-bottom: 1px solid rgb(0, 161, 228);
+}
+
+section.test ul {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 4em;
+  white-space:nowrap;
+  width:200vw;
+  background: silver;
+}
+
+header section{
+  display: flex;
+  flex-direction: column;
+}
+
+header section form:last-child{
+  width:100vw;
+  overflow-x: scroll;
+}
+
+header section form ul{
+  width: 200vw;
+  display: flex;
+  padding: 0;
+  list-style: none;
+  flex-wrap: wrap;
+  margin-left:1.4em;
+  padding-bottom: 1em;
+}
+
+header section form ul li{
+  width: 35vw;
+  flex-grow: 1;
+  margin: 0.4em 0em;
+}
+header>ul{
+  display:flex;
+  flex-direction: row;
+  list-style: none;
+}
+header>ul>li{
+  display:flex;
+  margin-left:0.5em;
+  background: #FDFCFC;
+  background: linear-gradient(#FDFCFC, #EFF9FE);
+  width:2.2em;
+  height:2.2em;
+  border-radius: 0.2em;
+  border:1px solid #D0E3ED;
+}
+header>ul>li img{
+  width:1.2em;
+  display: flex;
+  margin:auto;
+  color:blue;
+}
+header{
+  display:flex;
+  flex-wrap: wrap;
+}
+/*////////////////////////////////////////////////////////////
+
+                            Search bar
+
+////////////////////////////////////////////////////////////*/
+
+#namanyay-search-btn {
+  background:#0099ff;
+  color:white;
+  font: 'trebuchet ms', trebuchet;
+  padding:10px 20px;
+  border-radius:0 6px 6px 0;
+  -moz-border-radius:0 6px 6px 0;
+  -webkit-border-radius:0 6px 6px 0;
+  -o-border-radius:0 6px 6px 0;
+  border:0 none;
+  font-weight:bold;
+}
+
+#namanyay-search-box {
+  background: #eee;
+  padding:10px;
+  border-radius:6px 0 0 6px;
+  -moz-border-radius:6px 0 0 6px;
+  -webkit-border-radius:6px 0 0 6px;
+  -o-border-radius:6px 0 0 6px;
+  border:0 none;
+  width:160px;
+  margin:auto;
+ }
+
+ div{
+   display: table;
+   margin: 0 auto;
+
+ }
+
+ /*////////////////////////////////////////////////////////////
+
+                            Mobiel
+
+ ////////////////////////////////////////////////////////////*/
+
+@media only screen and (min-width : 20em){
+  main{
+    flex-flow: row wrap;
+    justify-content:
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+
+                           Tablet
+
+////////////////////////////////////////////////////////////*/
+
+@media only screen and (min-width : 43.75em){
+
+  #order{
+    max-height: 35em;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin:auto;
+  }
+
+  fieldset{
+    float:left;
+  }
+
+  fieldset:last-child{
+    margin-top:3.1em;
+    border:none;
+  }
+
+  article{
+    margin-left:4em;
+  }
+
+  header section form:last-child {
+    width:50vw;
+    margin:0;
+  }
+  header section form ul li{
+    width:20vw;
+  }
+  header section form ul{
+    width:125vw;
+  }
+}
+
+/*////////////////////////////////////////////////////////////
+
+                            Desktop
+
+////////////////////////////////////////////////////////////*/
+
+@media only screen and (min-width : 76em){
+  #order{
+    max-height: 35em;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    margin:auto;
+    }
+
+    article{
+      margin-left:5em;
+    }
+
+    ul{
+      margin-top:4em;
+      width:45em;
+      margin-left:5em;
+    }
+
+    nav ul li a{
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      padding:0.5em 0em;
+      color: rgba(0, 161, 228, 0.9);
+      font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+    }
+
+    nav ul li{
+      display:block;
+      width:100%;
+      padding:1em 0em;
+      margin:0;
+    }
+
+    nav ul{
+      width:100%;
+      margin:0;
+      text-align: center;
+      padding:0.5em 0em;
+    }
+}
+/*////////////////////////////////////////////////////////////
+
+                            Aside
+
+////////////////////////////////////////////////////////////*/
+
+aside{
+  position: absolute;
+  background-color:rgb(255, 255, 255);
+  width:100%;
+  transition: all 1.5s ease;
+  margin-left:-27em;
+  z-index: 1000;
+}
+
+aside>ul{
+  list-style: none;
+  padding:0;
+  width:80%;
+  margin:auto;
+  margin-top:2em;
+}
+aside>ul:first-of-type{
+  list-style: none;
+  padding:0;
+  margin:auto;
+  margin-top:0em;
+
+}
+aside >div{
+  display: flex;
+  justify-content: flex-end;
+  background-color: transparent;
+}
+aside>ul>li{
+  display:flex;
+  padding:1em 0em;;
+}
+aside> ul>li:first-of-type{
+  border-bottom:1px solid #2e2e2e;
+  font-weight: bold;
+  color:rgba(0, 161, 228, 0.9);
+}
+aside>ul>li>a {
+  color:white;
+  text-decoration:none;
+}
+aside > ul > form {
+  background-color:transparent;
+}
+aside > ul > form input {
+    background-color:transparent;
+}
+aside ul p {
+  padding:0;
+  color:rgb(255, 255, 255);
+}
+aside > ul > form > input[type="text"] {
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	background: white;
+	-webkit-border-radius: 0.1;
+	-moz-border-radius: 0.1;
+	border-radius: 0.1;
+	height: 0.1;
+	border: 1px solid rgba(0,0,0,0.2);
+	width: 170px;
+	padding: 0.7em;
+}
+
+aside > u > form > input[type="text"]:invalid {
+	outline: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	background: white url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAMAAABhq6zVAAAAIVBMVEW/v7+/v78AAAC/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v79QUkolAAAAC3RSTlOLYAAJeoMjRhpOcbsbtd4AAABJSURBVHjaVc1JDsAgDATB9uAF8v8Hx0QcSN9KssZI5eClDj18PRsFlmlQDcfUGd6A3EgYP1xncQ+sa5qYOk9jRQt1Y0izhU5bL2o2AW3ZQKeJAAAAAElFTkSuQmCC) 10px 6px no-repeat;
+}
+
+aside > u > form > input[type="text"]:invalid + input[type="reset"] {
+	visibility:hidden;
+}
+
+button {
+  padding:1em;
+  height:3em;
+}
+
+.slide{
+  margin:0;
+}
+
+div {
+  padding:1em;
+  background-color:#2e2e2e;
+  height:1em;
+  color:black;
+  font-size: 1.1em;
+}
+
+/*////////////////////////////////////////////////////////////
+
+                        inlogscherm
+
+////////////////////////////////////////////////////////////*/
+
+#inloggen{
+  background-color:rgb(250,250,250);
+  padding:1em;
+  border-radius:0.3em;
+  position:absolute;
+  z-index:2000;
+  width:12em;
+  border-radius: 0.6em;
+  -webkit-box-shadow: 4px 6px 30px 0px rgba(0,0,0,0.40);
+  -moz-box-shadow: 4px 6px 30px 0px rgba(0,0,0,0.40);
+  box-shadow: 4px 6px 30px 0px rgba(0,0,0,0.40);
+  left:1em;
+  margin-top:-30em;
+  transition: all 1.5s ease;
+}
+#inloggen legend{
+  padding:1em 0em;
+  font-size: 1.4em
+}
+#inloggen input{
+  display:block;
+  margin: 0;
+  height: 2em;
+  line-height: 15px;
+  padding: 6px;
+  width: 18em;
+  color: #003145;
+  border: 1px solid #abd7ea;
+  border-radius: 3px;
+  background-color: #fcfefe;
+  margin-top:1em;
+  margin-bottom:1em;
+  margin-left:1em;
+}
+#inloggen form label {
+  padding:0;
+  margin-top:1em;
+  margin-left:1em;
+}
+
+#inloggen p {
+  padding:0;
+  font-size:0.8em;
+  color:rgb(231, 123, 47);
+  margin-left:1.5em;
+}
+
+#inloggen button{
+  padding:0.2em 0.7em;
+  border-radius:0.4em;
+}
+
+.slideTop{
+  margin-top:15em !important;
+}
